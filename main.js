@@ -15,7 +15,7 @@ document.querySelector(".control-Buttons span").onclick = function () {
     bs.forEach((b) => {
       b.classList.remove("is-flipped");
     });
-  }, 2 * duration);
+  }, 2.5 * duration);
 };
 
 let duration = 1000;
@@ -88,15 +88,31 @@ function checkMethodBlocks(firstBlock, secondBlock) {
     triesElement.innerHTML--;
     if (triesElement.innerHTML != 0)
       arrayFail[Math.floor(Math.random() * rangFail)].play();
+    // show masseg Game Over
     else if (triesElement.innerHTML == 0) {
       document.querySelector(".end-game").classList.add("is-over");
-      document.getElementById("end-game-audio").play();
+      // document.getElementById("end-game-audio").play();
     }
-    // show masseg Game Over
+    // Remove class "is-flipped"
     setTimeout(() => {
       firstBlock.classList.remove("is-flipped");
       secondBlock.classList.remove("is-flipped");
     }, duration);
+  }
+  // Check if player is winner
+  if (
+    blocks.filter((flippedBlock) =>
+      flippedBlock.classList.contains("has-match")
+    ).length == blocks.length
+  ) {
+    Swal.fire({
+      title: "You are winner :)",
+      text: "Tasks for choose our app ",
+      icon: "warning",
+      confirmButtonText: "Yes",
+    }).then((v) => {
+      if (v.value) location.reload();
+    });
   }
 }
 
