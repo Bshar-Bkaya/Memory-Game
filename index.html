@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+
+  <body>
+    <div class="control-Buttons">
+      <span>Start Game</span>
+    </div>
+    <div class="info-container">
+      <div class="name">
+        Hello: <span></span>
+      </div>
+      <div class="tries">
+        Tries: <span>0</span>
+      </div>
+    </div>
+
+    <div class="memory-game-blocks">
+      <div class="game-block" data-technology="door1">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="imgs/002-door.png" alt="">
+        </div>
+      </div>
+      <div class="game-block" data-technology="door1">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="imgs/002-door.png" alt="">
+        </div>
+      </div>
+      <div class="game-block" data-technology="smart">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="imgs/003-smartlight.png" alt="">
+        </div>
+      </div>
+      <div class="game-block" data-technology="smart">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="imgs/003-smartlight.png" alt="">
+        </div>
+      </div>
+      <div class="game-block" data-technology="windows">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="imgs/005-windows.png" alt="">
+        </div>
+      </div>
+      <div class="game-block" data-technology="windows">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="imgs/005-windows.png" alt="">
+        </div>
+      </div>
+      <div class="game-block" data-technology="purifier">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="imgs/012-airpurifier.png" alt="">
+        </div>
+      </div>
+      <div class="game-block" data-technology="purifier">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="imgs/012-airpurifier.png" alt="">
+        </div>
+      </div>
+      <div class="game-block" data-technology="washing">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="imgs/013-washingmachine.png" alt="">
+        </div>
+      </div>
+      <div class="game-block" data-technology="washing">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="imgs/013-washingmachine.png" alt="">
+        </div>
+      </div>
+      <div class="game-block" data-technology="electric">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="imgs/017-electrickettle.png" alt="">
+        </div>
+      </div>
+      <div class="game-block" data-technology="electric">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="imgs/017-electrickettle.png" alt="">
+        </div>
+      </div>
+      <div class="game-block" data-technology="fan">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="imgs/023-fan.png" alt="">
+        </div>
+      </div>
+      <div class="game-block" data-technology="fan">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="imgs/023-fan.png" alt="">
+        </div>
+      </div>
+      <div class="game-block" data-technology="door">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="imgs/024-doorknob.png" alt="">
+        </div>
+      </div>
+      <div class="game-block" data-technology="door">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="imgs/024-doorknob.png" alt="">
+        </div>
+      </div>
+      <div class="game-block" data-technology="fingerprint">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="imgs/032-fingerprint.png" alt="">
+        </div>
+      </div>
+      <div class="game-block" data-technology="fingerprint">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="imgs/032-fingerprint.png" alt="">
+        </div>
+      </div>
+      <div class="game-block" data-technology="garden">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="imgs/031-garden.png" alt="">
+        </div>
+      </div>
+      <div class="game-block" data-technology="garden">
+        <div class="face front"></div>
+        <div class="face back">
+          <img src="imgs/031-garden.png" alt="">
+        </div>
+      </div>
+      <div class="fail-audio">
+        <audio id="fail" src="voise/pull-out-551.ogg" preload="auto"></audio>
+        <audio id="fail" src="voise/unsure-566.ogg"></audio>
+      </div>
+      <div class="success-audio">
+        <audio id="success" src="voise/eventually-590.ogg" preload="auto"></audio>
+        <audio id="success" src="voise/plucky-564.ogg" preload="auto"></audio>
+      </div>
+      <div class="end-game">
+        <span>Game Over</span>
+        <audio id="end-game-audio" src="">
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+
+</html>
